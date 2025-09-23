@@ -1,5 +1,3 @@
-$('[name="phone"]').mask('+7 (999) 999-99-99');
-
 // header scroll
 if (screen.width > 992) {
 	var element = document.getElementById('header');
