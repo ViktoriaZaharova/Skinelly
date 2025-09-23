@@ -1,0 +1,830 @@
+<!DOCTYPE html>
+<html lang="ru">
+
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>SkinElly</title>
+
+  <meta property="og:image" content="path/to/image.jpg">
+  <link rel="shortcut icon" href="img/favicon/favicon.ico" type="image/x-icon">
+
+  <!-- add plugins css -->
+  <link rel="stylesheet" href="css/bootstrap.min.css">
+  <link rel="stylesheet" href="css/slick.css">
+  <!-- add plugins css end -->
+
+  <link rel="stylesheet" href="css/style.css">
+  <link rel="stylesheet" href="css/header.css">
+  <link rel="stylesheet" href="css/footer.css">
+  <link rel="stylesheet" href="css/main.css">
+  <link rel="stylesheet" href="css/media.css">
+</head>
+
+<body class="catalog-page">
+
+  <header class="header" id="header">
+    <div class="header__block">
+      <div class="header-top">
+        <div class="header-top__wrap">
+
+          <a href="/" class="header-top__logo">
+            <img src="img/logo.png">
+          </a>
+
+        </div>
+        <div class="header-top__contacts">
+          <a href="https://dekalaser.ru" target="_blank" class="header-top__link">
+            <img src="img/company-logo.svg">
+          </a>
+
+          <a href="tel:88007004641" class="header-top__phone"><span class="color-accent">8(800)</span> 700-46-41</a>
+          <button data-bs-target="#modalCallback" data-bs-toggle="modal" class="header-top__btn btn-1">заказать обратный
+            звонок</button>
+        </div>
+
+      </div>
+      <nav class="navbar navbar-expand-lg main-navigation">
+        <button class="navbar-toggler" type="button">
+          <span class="navbar-toggler-icon">
+            <svg width="28" height="28" viewBox="0 0 28 28" fill="none" xmlns="http://www.w3.org/2000/svg">
+              <g clip-path="url(#clip0_2001_933)">
+                <path
+                  d="M4.66699 20.1482V18.9816H23.3337V20.1482H4.66699ZM4.66699 14.5832V13.4166H23.3337V14.5832H4.66699ZM4.66699 9.01823V7.85156H23.3337V9.01823H4.66699Z"
+                  fill="white" />
+              </g>
+              <defs>
+                <clipPath id="clip0_2001_933">
+                  <rect width="28" height="28" fill="white" />
+                </clipPath>
+              </defs>
+            </svg>
+          </span>
+        </button>
+        <div class="order-lg-2 sidebar d-lg-flex">
+          <div class="sidebar__header d-lg-none">
+            <a href="#" class="header-top__logo">
+              <img src="../img/footer/logo.png">
+            </a>
+            <button type="button" class="sidebar-close d-lg-none" aria-label="Закрыть">
+              <svg width="28" height="28" viewBox="0 0 28 28" fill="none" xmlns="http://www.w3.org/2000/svg">
+                <path
+                  d="M8.05116 20.8053L7.19482 19.9571L13.1437 14.0001L7.19482 8.07345L8.05116 7.22412L14 13.1718L19.9197 7.22529L20.776 8.07345L14.8272 14.0001L20.776 19.9571L19.9197 20.8053L14 14.86L8.05116 20.8053Z"
+                  fill="white" />
+              </svg>
+            </button>
+          </div>
+
+          <ul class="navbar-nav">
+            <li class='nav-item '><a class='nav-link' href='https://skinelly.ru/o-skinelly/'>О SkinElly</a></li>
+            <li class='nav-item dropdown '>
+              <a class='nav-link dropdown-toggle' data-bs-toggle='dropdown'
+                href='https://skinelly.ru/catalog/kosmetologiya/' role='button' aria-expanded='false'>
+                <div class='nav-link-icon box'>
+                  <img src='https://skinelly.ru/wp-content/uploads/2024/12/izobrazhenie.png'>
+                </div>
+                Косметология
+              </a>
+              <ul class='dropdown-menu'>
+                <li><a class='dropdown-item '
+                    href='https://skinelly.ru/catalog/kosmetologiya/biorevitalizanti/'>Биоревитализанты</a></li>
+                <li><a class='dropdown-item ' href='https://skinelly.ru/catalog/kosmetologiya/prefilleri/'>Префиллер</a>
+                </li>
+                <li><a class='dropdown-item ' href='https://skinelly.ru/catalog/kosmetologiya/fillery/'>Филлеры</a></li>
+                <li><a class='dropdown-item '
+                    href='https://skinelly.ru/catalog/kosmetologiya/fillery/fillery-dlya-gub/'>Филлеры для губ</a></li>
+                <li><a class='dropdown-item '
+                    href='https://skinelly.ru/catalog/kosmetologiya/fillery/fillery-dlya-licza/'>Филлеры для лица</a>
+                </li>
+              </ul>
+            </li>
+            <li class='nav-item dropdown '>
+              <a class='nav-link dropdown-toggle' data-bs-toggle='dropdown'
+                href='https://skinelly.ru/catalog/ginekologiya/' role='button' aria-expanded='false'>
+                <div class='nav-link-icon box'>
+                  <img src='https://skinelly.ru/wp-content/uploads/2024/12/izobrazhenie-2.png'>
+                </div>
+                Гинекология
+              </a>
+              <ul class='dropdown-menu'>
+                <li><a class='dropdown-item '
+                    href='https://skinelly.ru/catalog/ginekologiya/biorevitalizanty/'>Биоревитализанты -
+                    биоревитализация интимной области</a></li>
+                <li><a class='dropdown-item ' href='https://skinelly.ru/catalog/ginekologiya/prefillery/'>Префиллеры</a>
+                </li>
+                <li><a class='dropdown-item ' href='https://skinelly.ru/catalog/ginekologiya/filleri/'>Филлеры</a></li>
+                <li><a class='dropdown-item '
+                    href='https://skinelly.ru/catalog/ginekologiya/filleri/intimnaya-konturnaya-plastika/'>Интимная
+                    контурная пластика</a></li>
+              </ul>
+            </li>
+            <li class='nav-item '><a class='nav-link' href='/events/'>Мероприятия</a></li>
+            <li class='nav-item dropdown '>
+              <a class='nav-link dropdown-toggle' data-bs-toggle='dropdown' href='#' role='button'
+                aria-expanded='false'>
+
+                Информация
+              </a>
+              <ul class='dropdown-menu'>
+                <li><a class='dropdown-item ' href='/speakers/'>Спикеры</a></li>
+                <li><a class='dropdown-item ' href='/news/'>Новости</a></li>
+                <li><a class='dropdown-item ' href='/videos/'>Видео</a></li>
+              </ul>
+            </li>
+            <li class='nav-item '><a class='nav-link' href='https://skinelly.ru/contacts/'>Контакты</a></li>
+            <li class='nav-item '><a class='nav-link' href='https://skinelly.ru/nashi-distribyutory/'>Где купить</a>
+            </li>
+          </ul>
+          <div class="sidebar__contacts d-lg-none">
+            <a href="tel:88007004641" class="header-top__phone"><span>8 (800)</span> 700-46-41</a>
+            <button class="header-top__btn btn-1" data-bs-target="#modalCallback" data-bs-toggle="modal">заказать
+              обратный звонок</button>
+          </div>
+        </div>
+      </nav>
+    </div>
+  </header>
+
+  <section class="breadcrumbs">
+    <div class="container">
+      <div class="breadcrumbs__block">
+        <h1 class="title-page">Префиллеры</h1>
+        <nav aria-label="breadcrumb">
+          <ol class="breadcrumb">
+            <li class="breadcrumb-item" itemprop="itemListElement" itemscope="" itemtype="http://schema.org/ListItem">
+              <a itemprop="item" href="/"><span itemprop="name">Главная</span></a>
+              <meta itemprop="position" content="1">
+            </li>
+          </ol>
+        </nav>
+      </div>
+    </div>
+  </section>
+
+  <section class="catalog-one">
+    <img src="img/banner.jpg" alt="" class="catalog-one__image">
+  </section>
+
+  <section class="about-fillers">
+    <div class="container-fluid">
+      <div class="row">
+        <div class="col-12">
+          <h2 class="color-gradient">Что такое филлеры?</h2>
+        </div>
+        <div class="col-12">
+          <div class="box-text h3">
+            <p>Филлеры — это специальные гелеобразные составы, которые врач вводит тонкой иглой или канюлей в
+              определённые слои кожи. Их задача — восполнить недостающий объём, приподнять мягкие ткани и сделать лицо
+              более гармоничным. С их помощью можно разгладить морщины и складки, смягчить рубцы, скорректировать
+              пропорции и улучшить общее качество кожи. Такая процедура получила название контурная пластика.</p>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <section class="assortment section problems">
+    <div class="container-fluid">
+      <div class="row">
+        <div class="col-12">
+          <div class="assortment__header">
+            <div class="row align-items-center">
+              <div class="col-12">
+                <h2 class="color-gradient">Какие проблемы решают филлеры</h2>
+              </div>
+            </div>
+          </div>
+        </div>
+        <div class="col-12">
+          <div class="assortment__cards">
+            <div class="assortment__card card-num">
+              <div class="assortment__wrapper card-num-wrapper card-num-wrapper">
+                <p>Профилактика и коррекция фото- и хроно- старения</p>
+                <span>01</span>
+              </div>
+            </div>
+
+            <div class="assortment__card card-num">
+              <div class="assortment__wrapper card-num-wrapper card-num-wrapper">
+                <p>Увеличение губ</p>
+                <span>02</span>
+              </div>
+            </div>
+
+            <div class="assortment__card card-num">
+              <div class="assortment__wrapper card-num-wrapper card-num-wrapper">
+                <p>Повышение плотности, эластичности кожи, добавление объема</p>
+                <span>03</span>
+              </div>
+            </div>
+            <div class="assortment__card card-num">
+              <div class="assortment__wrapper card-num-wrapper card-num-wrapper">
+                <p>Коррекция ассиметрии губ или лица</p>
+                <span>04</span>
+              </div>
+            </div>
+
+            <div class="assortment__card card-num">
+              <div class="assortment__wrapper card-num-wrapper card-num-wrapper">
+                <p>Лифтинг-эффект, работа с дряблыми,
+                  ослабленными участками кожи, укрепление тканей</p>
+                <span>05</span>
+              </div>
+            </div>
+
+            <div class="assortment__card card-num">
+              <div class="assortment__wrapper card-num-wrapper card-num-wrapper">
+                <p>Разгладить носогубные складки, морщины вокруг рта и глаз,
+                  убрать «кисетные» морщины и заломы</p>
+                <span>06</span>
+              </div>
+            </div>
+            <div class="assortment__card card-num">
+              <div class="assortment__wrapper card-num-wrapper card-num-wrapper">
+                <p>Сглаживание рубцов (постакне)</p>
+                <span>07</span>
+              </div>
+            </div>
+            <div class="assortment__card card-num">
+              <div class="assortment__wrapper card-num-wrapper card-num-wrapper">
+                <p>Увлажнить изнутри, вернуть здоровое сияние</p>
+                <span>08</span>
+              </div>
+            </div>
+            <div class="assortment__card card-num">
+              <div class="assortment__wrapper card-num-wrapper card-num-wrapper">
+                <p>Кожа курильщика</p>
+                <span>09</span>
+              </div>
+            </div>
+            <div class="assortment__card card-num">
+              <div class="assortment__wrapper card-num-wrapper card-num-wrapper">
+                <p>Интимная контурная пластика/РУ РЗН 2022/17725</p>
+                <span>10</span>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+
+  <section class="safety section">
+    <div class="container-fluid">
+      <div class="row">
+        <div class="col-12">
+          <h2 class="color-gradient">Безопасность и противопоказания</h2>
+        </div>
+
+        <div class="col-12">
+          <div class="assortment__card card-num safety-card">
+            <div class="assortment__wrapper card-num-wrapper card-num-wrapper">
+              <p>Все препараты Skinelly проходят строгие тесты: на стерильность, цитотоксичность, аллергические
+                реакции,
+                а также на содержание эндотоксинов (менее 0,25 EU/mg)</p>
+              <p>Филлеры созданы на основе гиалуроновой кислоты (ГК) фармакопейного класса с высокими стандартами
+                очистки и
+                безопасностью.</p>
+              <p>Используется технология сшивки (Double Smart Crosslinking, DSC), что позволяет добиться баланс между
+                длительностью эффекта и минимизацией количества химических сшивающих агентов (например, остаточного
+                BDDE).</p>
+              <p>Обещается прогнозируемый результат и хорошая биосовместимость: филлеры постепенно биоразрушаются,
+                т.е.
+                устраняется риск длительного сохранения нежелательных эффектов.
+              </p>
+              <span>01</span>
+            </div>
+          </div>
+
+          <div class="assortment__card card-num safety-card">
+            <div class="assortment__wrapper card-num-wrapper card-num-wrapper">
+              <p>Противопоказания: </p>
+              <ul>
+                <li>Агрессивные воспалительные процессы в зоне предполагаемой инъекции (инфекция, акне, герпес и пр.).
+                </li>
+                <li>Аллергические реакции на компоненты препарата — хотя ГК редко вызывает аллергию, возможны реакции
+                  на
+                  другие ингредиенты или на остаточные агенты.</li>
+                <li>Беременность и лактация — большинство производителей и клинических стандартов рекомендуют не
+                  использовать филлеры в этот период.</li>
+                <li>Аутоиммунные заболевания в стадии обострения — т.к. введение инородного материала может
+                  спровоцировать
+                  нежелательные реакции.</li>
+                <li>Кожные заболевания, такие как псориаз, экзема, дерматит в активной фазе на обрабатываемых
+                  участках.</li>
+                <li>Нарушения свертываемости крови или приёма антикоагулянтов без контроля — риск синяков,
+                  кровотечения
+                  выше.</li>
+                <li>Повреждения кожи: шрамы, рубцы, свежие ожоги в зоне введения.</li>
+                <li>История келоидов или гипертрофических рубцов — может быть риск аномальной реакции.</li>
+              </ul>
+
+
+
+              <span>02</span>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <section class="benefits benefits-fillers-detailed section">
+    <div class="container">
+      <div class="row">
+        <div class="col-12">
+          <div class="benefits__block">
+            <h2 class="color-gradient text-center">Почему стоит выбрать Skinelly?</h2>
+            <div class="benefits__content">
+
+              <!-- https://skinelly.ru/wp-content/uploads/2025/01/meso-extra.mp4 -->
+              <div class="benefits__image">
+                <img src="img/benefits-img-bg.png" alt="" class="benefits__image-bg">
+              </div>
+
+              <div class="benefits__items">
+                <div class="benefits__item benefits__item_1 color-2">
+                  <div class="benefits__num plate">
+                    <p>01</p>
+                  </div>
+                  <div class="benefits__wrapper">
+                    <h3>Высокая степень безопасности</h3>
+                    <p>Препараты проходят многоступенчатый контроль на стерильность, аллергические реакции и уровень
+                      эндотоксинов, что снижает риск осложнений.</p>
+                  </div>
+                </div>
+                <div class="benefits__item benefits__item_2 color-3">
+                  <div class="benefits__num plate">
+                    <p>02</p>
+                  </div>
+                  <div class="benefits__wrapper">
+                    <h3>Прогнозируемый эффект</h3>
+                    <p>Равномерное распределение филлера позволяет избежать неровностей и «комочков» под кожей.</p>
+                  </div>
+                </div>
+                <div class="benefits__item benefits__item_3 color-3">
+                  <div class="benefits__num plate">
+                    <p>03</p>
+                  </div>
+                  <div class="benefits__wrapper">
+                    <h3>Длительное
+                      и стойкое увлажнение кожи</h3>
+                  </div>
+                </div>
+                <div class="benefits__item benefits__item_4 color-1">
+                  <div class="benefits__num plate">
+                    <p>04</p>
+                  </div>
+                  <div class="benefits__wrapper">
+                    <h3>Разнообразие линеек</h3>
+                    <p>Можно подобрать препарат для разных зон: губы, скулы, носогубные складки, подбородок или
+                      коррекция овала лица.</p>
+                  </div>
+                </div>
+
+                <div class="benefits__item benefits__item_5 color-4">
+                  <div class="benefits__num plate">
+                    <p>05</p>
+                  </div>
+                  <div class="benefits__wrapper">
+                    <h3>Естественный результат</h3>
+                    <p>технология двойной сшивки обеспечивает оптимальную плотность геля: он сохраняет форму, но при
+                      этом выглядит максимально натурально.</p>
+                  </div>
+                </div>
+
+                <div class="benefits__item benefits__item_6 color-3">
+                  <div class="benefits__num plate">
+                    <p>06</p>
+                  </div>
+                  <div class="benefits__wrapper">
+                    <h3>Европейское качество по доступной цене</h3>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <section class="faq">
+    <div class="container-fluid">
+      <div class="row">
+        <div class="col-12">
+          <h2 class="color-gradient">ЧАСТЫЕ ВОПРОСЫ (FAQ)</h2>
+        </div>
+
+        <div class="col-12">
+          <div class="accordion" id="accordionExample">
+            <div class="accordion-item">
+              <div class="accordion-header">
+                <button class="accordion-button" type="button" data-bs-toggle="collapse" data-bs-target="#collapseOne"
+                  aria-expanded="true" aria-controls="collapseOne">
+                  Сколько держится филлер SkinElly?
+                </button>
+
+              </div>
+              <div id="collapseOne" class="accordion-collapse collapse show" data-bs-parent="#accordionExample">
+                <div class="accordion-body">
+                  <div class="box-text">
+                    <p><strong>This is the first item’s accordion body.</strong> It is shown by default, until the
+                      collapse
+                      plugin adds the appropriate classes that we use to style each element. These classes control the
+                      overall appearance, as well as the showing and hiding via CSS transitions. You can modify any of
+                      this
+                      with custom CSS or overriding our default variables. It’s also worth noting that just about any
+                      HTML
+                      can go within the <code>.accordion-body</code>, though the transition does limit overflow.</p>
+                  </div>
+                </div>
+              </div>
+            </div>
+            <div class="accordion-item">
+              <div class="accordion-header">
+                <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse"
+                  data-bs-target="#collapseTwo" aria-expanded="false" aria-controls="collapseTwo">
+                  Болезненно ли проходит процедура?
+                </button>
+
+              </div>
+              <div id="collapseTwo" class="accordion-collapse collapse" data-bs-parent="#accordionExample">
+                <div class="accordion-body">
+                  <div class="box-text">
+                    <p><strong>This is the first item’s accordion body.</strong> It is shown by default, until the
+                      collapse
+                      plugin adds the appropriate classes that we use to style each element. These classes control the
+                      overall appearance, as well as the showing and hiding via CSS transitions. You can modify any of
+                      this
+                      with custom CSS or overriding our default variables. It’s also worth noting that just about any
+                      HTML
+                      can go within the <code>.accordion-body</code>, though the transition does limit overflow.</p>
+                  </div>
+                </div>
+              </div>
+            </div>
+            <div class="accordion-item">
+              <div class="accordion-header">
+                <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse"
+                  data-bs-target="#collapseThree" aria-expanded="false" aria-controls="collapseThree">
+                  Сертифицирован ли препарат в России?
+                </button>
+
+              </div>
+              <div id="collapseThree" class="accordion-collapse collapse" data-bs-parent="#accordionExample">
+                <div class="accordion-body">
+                  <div class="box-text">
+                    <p><strong>This is the first item’s accordion body.</strong> It is shown by default, until the
+                      collapse
+                      plugin adds the appropriate classes that we use to style each element. These classes control the
+                      overall appearance, as well as the showing and hiding via CSS transitions. You can modify any of
+                      this
+                      with custom CSS or overriding our default variables. It’s also worth noting that just about any
+                      HTML
+                      can go within the <code>.accordion-body</code>, though the transition does limit overflow.</p>
+                  </div>
+                </div>
+              </div>
+            </div>
+
+
+            <div class="accordion-item">
+              <div class="accordion-header">
+                <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse"
+                  data-bs-target="#collapse4" aria-expanded="false" aria-controls="collapse4">
+                  Есть ли реабилитация?
+                </button>
+
+              </div>
+              <div id="collapse4" class="accordion-collapse collapse" data-bs-parent="#accordionExample">
+                <div class="accordion-body">
+                  <div class="box-text">
+                    <p><strong>This is the first item’s accordion body.</strong> It is shown by default, until the
+                      collapse
+                      plugin adds the appropriate classes that we use to style each element. These classes control the
+                      overall appearance, as well as the showing and hiding via CSS transitions. You can modify any of
+                      this
+                      with custom CSS or overriding our default variables. It’s also worth noting that just about any
+                      HTML
+                      can go within the <code>.accordion-body</code>, though the transition does limit overflow.</p>
+                  </div>
+                </div>
+              </div>
+            </div>
+
+            <div class="accordion-item">
+              <div class="accordion-header">
+                <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse"
+                  data-bs-target="#collapse5" aria-expanded="false" aria-controls="collapse5">
+                  Можно ли сочетать филлеры с ботоксом и аппаратными процедурами?
+                </button>
+
+              </div>
+              <div id="collapse5" class="accordion-collapse collapse" data-bs-parent="#accordionExample">
+                <div class="accordion-body">
+                  <div class="box-text">
+                    <p><strong>This is the first item’s accordion body.</strong> It is shown by default, until the
+                      collapse
+                      plugin adds the appropriate classes that we use to style each element. These classes control the
+                      overall appearance, as well as the showing and hiding via CSS transitions. You can modify any of
+                      this
+                      with custom CSS or overriding our default variables. It’s also worth noting that just about any
+                      HTML
+                      can go within the <code>.accordion-body</code>, though the transition does limit overflow.</p>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <div class="to-from-results">
+    <div class="container-fluid">
+      <div class="row">
+        <div class="col-12">
+          <div class="to-from-results-slider">
+            <div class="slide">
+              <div class="to-from-results-slider__wrapper">
+                <div class="to-from-results__item">
+                  <div class="to-from-results__item-img"><img src="img/to.jpg" alt=""></div><span>до</span>
+                </div>
+                <div class="to-from-results__item">
+                  <div class="to-from-results__item-img"><img src="img/from.jpg" alt=""></div><span>после</span>
+                </div>
+              </div>
+            </div>
+
+            <div class="slide">
+              <div class="to-from-results-slider__wrapper">
+                <div class="to-from-results__item">
+                  <div class="to-from-results__item-img"><img src="img/to.jpg" alt=""></div><span>до</span>
+                </div>
+                <div class="to-from-results__item">
+                  <div class="to-from-results__item-img"><img src="img/from.jpg" alt=""></div><span>после</span>
+                </div>
+              </div>
+            </div>
+
+            <div class="slide">
+              <div class="to-from-results-slider__wrapper">
+                <div class="to-from-results__item">
+                  <div class="to-from-results__item-img"><img src="img/to.jpg" alt=""></div><span>до</span>
+                </div>
+                <div class="to-from-results__item">
+                  <div class="to-from-results__item-img"><img src="img/from.jpg" alt=""></div><span>после</span>
+                </div>
+              </div>
+            </div>
+            <div class="slide">
+              <div class="to-from-results-slider__wrapper">
+                <div class="to-from-results__item">
+                  <div class="to-from-results__item-img"><img src="img/to.jpg" alt=""></div><span>до</span>
+                </div>
+                <div class="to-from-results__item">
+                  <div class="to-from-results__item-img"><img src="img/from.jpg" alt=""></div><span>после</span>
+                </div>
+              </div>
+            </div>
+            <div class="slide">
+              <div class="to-from-results-slider__wrapper">
+                <div class="to-from-results__item">
+                  <div class="to-from-results__item-img"><img src="img/to.jpg" alt=""></div><span>до</span>
+                </div>
+                <div class="to-from-results__item">
+                  <div class="to-from-results__item-img"><img src="img/from.jpg" alt=""></div><span>после</span>
+                </div>
+              </div>
+            </div>
+            <div class="slide">
+              <div class="to-from-results-slider__wrapper">
+                <div class="to-from-results__item">
+                  <div class="to-from-results__item-img"><img src="img/to.jpg" alt=""></div><span>до</span>
+                </div>
+                <div class="to-from-results__item">
+                  <div class="to-from-results__item-img"><img src="img/from.jpg" alt=""></div><span>после</span>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+
+
+  <section class="reviews">
+    <div class="container">
+      <div class="row">
+        <div class="col-12">
+          <h2 class="color-gradient text-center">Отзывы</h2>
+        </div>
+        <div class="col-12">
+          <div class="reviews-slider slider-stretch">
+            <div class="slide">
+              <div class="reviews-card">
+                <div class="reviews-card__head"></div>
+                <h4>Александра Иванова</h4>
+                <div class="box-text">
+                  <p>Методика MonaLisa Touch была внедрена в Европейском Медицинском Центре с апреля 2011г.
+                    с приобретением лазерной системы SmartXide 2. Процедура достоверно показала свою высокую
+                    эффективность и безопасность при инволютивных изменениях, при жалобах на уменьшение интимной
+                    чувствительности...</p>
+                </div>
+                <a href="#" class="reviews-card__link">
+                  <span>Читать полностью</span>
+                  <svg width="24" height="24" viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg">
+                    <path fill-rule="evenodd" clip-rule="evenodd"
+                      d="M10.1448 16.7766C9.8469 16.4787 9.8469 15.9958 10.1448 15.698L13.8427 12L10.1448 8.30203C9.8469 8.00417 9.8469 7.52125 10.1448 7.22339C10.4426 6.92554 10.9255 6.92554 11.2234 7.22339L16 12L11.2234 16.7766C10.9255 17.0745 10.4426 17.0745 10.1448 16.7766Z"
+                      fill="#5A3FC3" />
+                  </svg>
+                </a>
+              </div>
+            </div>
+
+            <div class="slide">
+              <div class="reviews-card">
+                <div class="reviews-card__head"></div>
+                <h4>Александра Иванова</h4>
+                <div class="box-text">
+                  <p>Методика MonaLisa Touch была внедрена в Европейском Медицинском Центре с апреля 2011г.
+                    с приобретением лазерной системы SmartXide 2. Процедура достоверно показала свою высокую
+                    эффективность и безопасность при инволютивных изменениях, при жалобах на уменьшение интимной
+                    чувствительности...</p>
+                </div>
+                <a href="#" class="reviews-card__link">
+                  <span>Читать полностью</span>
+                  <svg width="24" height="24" viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg">
+                    <path fill-rule="evenodd" clip-rule="evenodd"
+                      d="M10.1448 16.7766C9.8469 16.4787 9.8469 15.9958 10.1448 15.698L13.8427 12L10.1448 8.30203C9.8469 8.00417 9.8469 7.52125 10.1448 7.22339C10.4426 6.92554 10.9255 6.92554 11.2234 7.22339L16 12L11.2234 16.7766C10.9255 17.0745 10.4426 17.0745 10.1448 16.7766Z"
+                      fill="#5A3FC3" />
+                  </svg>
+                </a>
+              </div>
+            </div>
+
+            <div class="slide">
+              <div class="reviews-card">
+                <div class="reviews-card__head"></div>
+                <h4>Александра Иванова</h4>
+                <div class="box-text">
+                  <p>Методика MonaLisa Touch была внедрена в Европейском Медицинском Центре с апреля 2011г.
+                    с приобретением лазерной системы SmartXide 2. Процедура достоверно показала свою высокую
+                    эффективность и безопасность при инволютивных изменениях, при жалобах на уменьшение интимной
+                    чувствительности...</p>
+                </div>
+                <a href="#" class="reviews-card__link">
+                  <span>Читать полностью</span>
+                  <svg width="24" height="24" viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg">
+                    <path fill-rule="evenodd" clip-rule="evenodd"
+                      d="M10.1448 16.7766C9.8469 16.4787 9.8469 15.9958 10.1448 15.698L13.8427 12L10.1448 8.30203C9.8469 8.00417 9.8469 7.52125 10.1448 7.22339C10.4426 6.92554 10.9255 6.92554 11.2234 7.22339L16 12L11.2234 16.7766C10.9255 17.0745 10.4426 17.0745 10.1448 16.7766Z"
+                      fill="#5A3FC3" />
+                  </svg>
+                </a>
+              </div>
+            </div>
+
+            <div class="slide">
+              <div class="reviews-card">
+                <div class="reviews-card__head"></div>
+                <h4>Александра Иванова</h4>
+                <div class="box-text">
+                  <p>Методика MonaLisa Touch была внедрена в Европейском Медицинском Центре с апреля 2011г.
+                    с приобретением лазерной системы SmartXide 2. Процедура достоверно показала свою высокую
+                    эффективность и безопасность при инволютивных изменениях, при жалобах на уменьшение интимной
+                    чувствительности...</p>
+                </div>
+                <a href="#" class="reviews-card__link">
+                  <span>Читать полностью</span>
+                  <svg width="24" height="24" viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg">
+                    <path fill-rule="evenodd" clip-rule="evenodd"
+                      d="M10.1448 16.7766C9.8469 16.4787 9.8469 15.9958 10.1448 15.698L13.8427 12L10.1448 8.30203C9.8469 8.00417 9.8469 7.52125 10.1448 7.22339C10.4426 6.92554 10.9255 6.92554 11.2234 7.22339L16 12L11.2234 16.7766C10.9255 17.0745 10.4426 17.0745 10.1448 16.7766Z"
+                      fill="#5A3FC3" />
+                  </svg>
+                </a>
+              </div>
+            </div>
+
+            <div class="slide">
+              <div class="reviews-card">
+                <div class="reviews-card__head"></div>
+                <h4>Александра Иванова</h4>
+                <div class="box-text">
+                  <p>Методика MonaLisa Touch была внедрена в Европейском Медицинском Центре с апреля 2011г.
+                    с приобретением лазерной системы SmartXide 2. Процедура достоверно показала свою высокую
+                    эффективность и безопасность при инволютивных изменениях, при жалобах на уменьшение интимной
+                    чувствительности...</p>
+                </div>
+                <a href="#" class="reviews-card__link">
+                  <span>Читать полностью</span>
+                  <svg width="24" height="24" viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg">
+                    <path fill-rule="evenodd" clip-rule="evenodd"
+                      d="M10.1448 16.7766C9.8469 16.4787 9.8469 15.9958 10.1448 15.698L13.8427 12L10.1448 8.30203C9.8469 8.00417 9.8469 7.52125 10.1448 7.22339C10.4426 6.92554 10.9255 6.92554 11.2234 7.22339L16 12L11.2234 16.7766C10.9255 17.0745 10.4426 17.0745 10.1448 16.7766Z"
+                      fill="#5A3FC3" />
+                  </svg>
+                </a>
+              </div>
+            </div>
+
+            <div class="slide">
+              <div class="reviews-card">
+                <div class="reviews-card__head"></div>
+                <h4>Александра Иванова</h4>
+                <div class="box-text">
+                  <p>Методика MonaLisa Touch была внедрена в Европейском Медицинском Центре с апреля 2011г.
+                    с приобретением лазерной системы SmartXide 2. Процедура достоверно показала свою высокую
+                    эффективность и безопасность при инволютивных изменениях, при жалобах на уменьшение интимной
+                    чувствительности...</p>
+                </div>
+                <a href="#" class="reviews-card__link">
+                  <span>Читать полностью</span>
+                  <svg width="24" height="24" viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg">
+                    <path fill-rule="evenodd" clip-rule="evenodd"
+                      d="M10.1448 16.7766C9.8469 16.4787 9.8469 15.9958 10.1448 15.698L13.8427 12L10.1448 8.30203C9.8469 8.00417 9.8469 7.52125 10.1448 7.22339C10.4426 6.92554 10.9255 6.92554 11.2234 7.22339L16 12L11.2234 16.7766C10.9255 17.0745 10.4426 17.0745 10.1448 16.7766Z"
+                      fill="#5A3FC3" />
+                  </svg>
+                </a>
+              </div>
+            </div>
+
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <section class="post-procedure">
+    <div class="container-fluid">
+      <div class="row">
+        <div class="col-12">
+          <div class="post-procedure__image"><img src="img/post-procedure.jpg" alt=""></div>
+
+          <div class="post-procedure__wrapper">
+            <h2 class="color-gradient">Получить памятку по уходу после процедуры</h2>
+            <a href="#" class="btn btn-blue" target="_blank" download="#">
+              <span>СКАЧАТЬ ПАМЯТКУ</span>
+              <svg width="50" height="50" viewBox="0 0 50 50" xmlns="http://www.w3.org/2000/svg">
+                <path
+                  d="M25.0001 37.9417C26.8987 37.9417 28.4952 37.2458 29.7897 35.8542C31.0841 34.4625 31.7313 32.7944 31.7313 30.85V21.3125H29.648V30.8479C29.648 32.2076 29.2022 33.3819 28.3105 34.3708C27.4188 35.3597 26.3154 35.8556 25.0001 35.8583C23.6945 35.8583 22.5931 35.3632 21.6959 34.3729C20.8001 33.384 20.3522 32.2097 20.3522 30.85V19.4708C20.3522 18.9181 20.523 18.4389 20.8647 18.0333C21.2063 17.6306 21.6369 17.4292 22.1563 17.4292C22.6813 17.4292 23.1133 17.6306 23.4522 18.0333C23.7911 18.4361 23.9598 18.9153 23.9584 19.4708V30.85H26.0417V19.4708C26.0417 18.3597 25.6716 17.3944 24.9313 16.575C24.1911 15.7556 23.2654 15.3458 22.1542 15.3458C21.0431 15.3458 20.1181 15.7556 19.3792 16.575C18.6404 17.3944 18.2702 18.3597 18.2688 19.4708V30.85C18.2688 32.7944 18.9181 34.4625 20.2167 35.8542C21.514 37.2458 23.1084 37.9417 25.0001 37.9417ZM10.4167 43.75V6.25H30.6876L39.5834 15.1458V43.75H10.4167ZM12.5001 41.6667H37.5001V16.1875H29.6459V8.33333H12.5001V41.6667Z" />
+              </svg>
+
+            </a>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+
+
+
+
+  <section class="">
+    <div class="container">
+      <div class="row">
+
+      </div>
+    </div>
+  </section>
+
+  <section class="">
+    <div class="container">
+      <div class="row">
+
+      </div>
+    </div>
+  </section>
+
+  <section class="">
+    <div class="container">
+      <div class="row">
+
+      </div>
+    </div>
+  </section>
+
+  <footer>
+    <div class="container">
+      <div class="row">
+
+      </div>
+    </div>
+  </footer>
+
+  <!-- add plugins js-->
+  <script src="js/jquery.min.js"></script>
+  <script src="js/bootstrap.bundle.min.js"></script>
+  <script src="js/slick.min.js"></script>
+  <script src="js/jquery.maskedinput.min.js"></script>
+  <!-- add plugins js end-->
+
+  <script src="js/common.js"></script>
+
+</body>
+
+</html>

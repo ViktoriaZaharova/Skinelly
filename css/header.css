@@ -1,0 +1,179 @@
+.header {
+  position: fixed;
+  top: 0;
+  left: 0;
+  right: 0;
+  margin: auto;
+  z-index: 100;
+  border-bottom: 0.0625rem solid #d2d9db;
+  -webkit-backdrop-filter: blur(1.5rem);
+          backdrop-filter: blur(1.5rem);
+  background-color: #fff;
+}
+.header.scroll {
+  border-bottom: none;
+}
+.header.scroll .main-navigation {
+  transition: 0.3s ease;
+  opacity: 0;
+  width: 0;
+  height: 0;
+  font-size: 0;
+  padding: 0 2.5rem;
+  position: relative;
+  z-index: -1000;
+  overflow: hidden;
+}
+.header-top {
+  padding: 0 1.5rem;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  border: 0.0625rem solid #d2d9db;
+}
+.header-top__wrap {
+	display: -webkit-box;
+	display: -webkit-flex;
+	display: -ms-flexbox;
+	display: flex;
+	-webkit-box-align: center;
+	-webkit-align-items: center;
+	-ms-flex-align: center;
+	align-items: center;
+}
+.header-top__logo {
+      padding-left: 2.5rem;
+    max-width: 14.875rem;
+}
+.header-top__contacts {
+  padding-right: 2.5rem;
+  display: flex;
+  align-items: center;
+}
+.header-top__link {
+  background-color: #EEF1F2;
+  border-radius: 2rem;
+  padding: 1rem 2rem;
+  max-height: 2.8125rem;
+  line-height: 0;
+  margin-right: 3rem;
+}
+.header-top__link img {
+  max-width: 2.75rem;
+  height: auto;
+}
+.header-top__phone {
+  font-size: 1.75rem;
+  color: #13263D;
+  margin-right: 1.5rem;
+  font-family: "Geologica";
+  font-weight: 700;
+}
+.header-top__phone span {
+  color: #2190AC;
+}
+.header .navbar {
+  padding: 1rem 2.5rem;
+  transition: 0.3s ease;
+}
+.header .navbar .nav-item {
+  display: flex;
+  align-items: center;
+  padding-left: 1.0625rem;
+}
+.header .navbar .nav-item:first-child {
+  padding-left: 0;
+}
+.header .navbar .nav-item:last-child::after {
+  display: none;
+}
+.header .navbar .nav-item::after {
+  content: "";
+  display: block;
+  background-color: #d9d9d9;
+  width: 0.25rem;
+  height: 1.5rem;
+  border-radius: 0.1875rem;
+  margin-left: 1.0625rem;
+}
+.header .navbar-nav .nav-item.dropdown .dropdown-menu {
+  background-color: #EEF1F2;
+  border-radius: 0 0 3rem 3rem;
+  padding: 1.5rem 2.75rem 2.75rem;
+  border: none;
+}
+.header .navbar-nav .nav-item.dropdown .dropdown-menu li {
+  margin-bottom: 0.75rem;
+}
+.header .navbar-nav .nav-item.dropdown .dropdown-menu li:last-child {
+  margin: 0;
+}
+.header .navbar-nav .nav-item.dropdown .dropdown-menu .dropdown-item {
+  width: 100%;
+  padding: 0;
+  background-color: #fff;
+  border-radius: 2.125rem;
+  padding: 1.125rem 1.5rem;
+  font-size: 1rem;
+  color: #13263D;
+  text-transform: uppercase;
+  letter-spacing: 0.02em;
+  transition: 0.3s ease;
+  font-family: "Mulish";
+  font-weight: 600;
+}
+.header .navbar-nav .nav-item.dropdown .dropdown-menu .dropdown-item:hover {
+  background-color: #fafafa;
+}
+.header .navbar-nav .nav-item.dropdown .dropdown-menu .dropdown-item:active {
+  background-color: rgba(121, 173, 213, 0.2);
+}
+.header .navbar-nav .nav-item.dropdown .nav-link {
+  display: flex;
+  align-items: center;
+}
+.header .navbar-nav .nav-item.dropdown .nav-link-icon {
+  width: 4.6875rem;
+  height: 2.125rem;
+  border-radius: 3.75rem;
+  margin-right: 1rem;
+}
+.header .navbar-nav .nav-item.dropdown .nav-link.dropdown-toggle::after {
+  display: block;
+  border: none;
+  background-image: url("../img/dropdown-arrow.svg");
+  background-repeat: no-repeat;
+  background-size: 100%;
+  width: 1.5rem;
+  height: 1.5rem;
+  margin-left: 0.3125rem;
+}
+.header .navbar-nav .nav-link {
+  padding: 0.8125rem 1.5rem;
+  color: #13263D;
+  font-size: 1rem;
+  text-transform: uppercase;
+  letter-spacing: 0.02em;
+  transition: 0.3s ease;
+  border-radius: 2.125rem;
+  white-space: nowrap;
+  font-family: "Mulish";
+  font-weight: 600;
+}
+.header .navbar-nav .nav-link.dropdown-toggle {
+  padding: 0.3125rem 1.5rem;
+}
+.header .navbar-nav .nav-link.dropdown-toggle::before {
+  content: "";
+  position: absolute;
+  bottom: -0.9375rem;
+  left: 0;
+  width: 100%;
+  height: 1.875rem;
+}
+.header .navbar-nav .nav-link:hover {
+  background-color: #fafafa;
+}
+.header .navbar-nav .nav-link:active {
+  background-color: rgba(121, 173, 213, 0.2);
+}

@@ -1,0 +1,463 @@
+.catalog-description {
+  padding: 7.5rem 0;
+}
+
+.catalog-description-info__title {
+  padding-bottom: 3rem;
+}
+
+.catalog-description-info__title span {
+  display: block;
+  background: linear-gradient(90.04deg, #79add5 0.03%, #b6d87a 99.96%);
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+  background-clip: text;
+}
+
+.catalog-description-info__texts {
+  display: flex;
+  flex-direction: column;
+  gap: 0.9375rem;
+}
+
+.catalog-description-info__texts p {
+  color: #586576;
+  font-size: 1.125rem;
+  line-height: 1.25rem;
+  font-family: Mulish;
+  font-weight: 600;
+}
+
+.catalog-description-block {
+  padding-left: 3.75rem;
+  display: flex;
+  justify-content: space-between;
+  align-items: flex-end;
+}
+
+.catalog-description-block__left {
+  max-width: 34.4375rem;
+  width: 100%;
+}
+
+.catalog-description-block__title {
+  padding-bottom: 1rem;
+  max-width: 20rem;
+}
+
+.catalog-description-block__text {
+  font-size: 1.125rem;
+  line-height: 1.25rem;
+  color: #586576;
+  padding-bottom: 3rem;
+}
+
+.catalog-description-block__items {
+  display: flex;
+  flex-direction: column;
+  gap: 1rem;
+}
+
+.catalog-description-block-item {
+  display: flex;
+  justify-content: flex-start;
+  align-items: center;
+  padding: 3rem;
+  border-radius: 1.5rem;
+  background: #eef1f2;
+}
+
+.catalog-description-block-item__box {
+  overflow: hidden;
+  width: 8.875rem;
+  height: 7.75rem;
+}
+
+.catalog-description-block-item__box .number {
+  margin-left: -2.0625rem;
+  font-size: 9.0625rem;
+  line-height: 9.0625rem;
+  color: #13263d;
+  font-family: "Geologica";
+  font-weight: 100;
+}
+
+.catalog-description-block-item__text {
+  max-width: 16.5625rem;
+  margin-left: 3rem;
+  line-height: 1.25rem;
+  color: #13263d;
+}
+
+.catalog-description-block__dop {
+  padding: 3rem;
+  max-width: 18.25rem;
+  width: 100%;
+  background: #f0f5e7;
+  border-radius: 1.5rem;
+}
+
+.catalog-description-block__dop p {
+  color: #556471;
+}
+
+.catalog-description-block__dop b {
+  color: #13263d;
+  font-family: "Geologica";
+  font-weight: 700;
+}
+
+.about-fillers .box-text {
+  margin: 4rem 0 2rem;
+}
+
+.assortment__cards {
+  width: 100%;
+  display: flex;
+  align-items: stretch;
+  justify-content: space-between;
+  flex-wrap: wrap;
+  padding: 2.51rem 1rem 1rem;
+
+}
+
+.assortment__card {
+  flex: 1 1 calc((100% - 10rem) / 5);
+  max-width: calc((100% - 10rem) / 5);
+  margin: 0 auto 2rem;
+  box-sizing: border-box;
+  border-radius: 1rem;
+  background: #FFFFFF;
+  position: relative;
+  z-index: 1;
+  padding: 1.75rem 3rem;
+  overflow: hidden;
+  display: flex;
+  align-items: center;
+  flex-wrap: wrap;
+  font-size: 1.4rem;
+}
+
+.assortment__card span {
+  position: absolute;
+  z-index: -1;
+  right: -1.2rem;
+  top: 50%;
+  transform: translate(0, -50%);
+  color: #79ADD5;
+  font-weight: 100;
+  font-family: "Geologica";
+  font-size: 9.063rem;
+  opacity: 0.1;
+}
+
+.safety-card {
+  flex: none;
+  max-width: none;
+  width: 100%;
+  margin: 0 auto 2.75rem;
+}
+
+.safety-card:last-child {
+  margin-bottom: 0;
+}
+
+.safety-card p {
+  margin: 0 0 1rem;
+}
+
+.safety-card p:last-child {
+  margin-bottom: 0;
+}
+
+.safety h2 {
+  margin: 0 0 2.75rem;
+}
+
+.benefits__content {
+  margin-top: 3.125rem;
+  position: relative
+}
+
+.benefits__content::after {
+  content: "";
+  position: absolute;
+  background: url('../img/radial-circle.png') no-repeat center;
+  background-size: contain;
+  width: 100%;
+  height: 100%;
+  left: 0;
+  top: 0;
+  z-index: -1;
+}
+
+.benefits__image {
+  /* max-width: 68.4375rem; */
+  max-width: 33rem;
+  min-height: 70rem;
+  margin: auto;
+  position: relative;
+  overflow: hidden;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+
+
+.benefits__image img {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  width: 100%;
+}
+
+.about-preparations .benefits__image {
+  max-width: 61rem;
+}
+
+.benefits__item {
+  position: absolute;
+  -webkit-border-radius: 1.5rem;
+  border-radius: 1.5rem;
+  padding: 3rem;
+}
+
+.benefits__item.color-1 {
+  background-color: #E0EBF3;
+}
+
+.benefits__item.color-2 {
+  background-color: #EEEDF2;
+}
+
+.benefits__item.color-3 {
+  background-color: #EEF1F2;
+}
+
+.benefits__item.color-4 {
+  background-color: #E4EFF2;
+}
+
+.benefits__item_1 {
+  top: 2.25rem;
+  left: 8.3125rem;
+  /*max-width: 28.625rem;*/
+  max-width: 30.63rem;
+}
+
+.benefits__item_2 {
+  max-width: 24.625rem;
+  top: 13.1875rem;
+  right: 0;
+}
+
+.benefits__item_3 {
+  max-width: 24.1875rem;
+  top: 25.3125rem;
+  left: 0;
+}
+
+.benefits__item_4 {
+  top: 38.375rem;
+  right: 2.125rem;
+  max-width: 26rem;
+}
+
+.benefits__item_5 {
+  left: 4.6875rem;
+  top: 45.625rem;
+  max-width: 27.9375rem;
+}
+
+.benefits__item_6 {
+  max-width: 35.375rem;
+  top: 61.0625rem;
+  right: 16.8125rem;
+}
+
+.benefits__wrapper p {
+  margin: 1rem 0 0 0;
+  letter-spacing: 0.02em;
+}
+
+.plate {
+  background-color: #fff;
+  -webkit-border-radius: 1.25rem;
+  border-radius: 1.25rem;
+  padding: 0.25rem 1rem;
+  color: rgba(19, 38, 61, 0.7);
+  font-size: 1.5rem;
+  letter-spacing: 0.02em;
+  width: -webkit-max-content;
+  width: -moz-max-content;
+  width: max-content;
+  text-transform: uppercase;
+  line-height: 1.25;
+  font-family: Geologica;
+  font-weight: 300;
+}
+
+.benefits__num {
+  position: absolute;
+  top: -1.25rem;
+  left: 3rem;
+}
+
+.post-procedure {
+  padding: 2rem 0;
+}
+
+.post-procedure__image {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  width: 100%;
+  height: 34.5rem;
+  border-radius: 1.5rem;
+  overflow: hidden;
+}
+
+.post-procedure__image img {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+}
+
+.post-procedure__wrapper {
+  margin-top: 3.3rem;
+  padding: 0 5rem;
+  display: flex;
+  align-items: center;
+  flex-wrap: wrap;
+}
+
+.post-procedure h2 {
+  max-width: 60rem;
+}
+
+.post-procedure__wrapper .btn {
+  margin-left: 2.8rem;
+}
+
+.reviews {
+  margin: 6.25rem 0;
+}
+
+.reviews-slider {
+  margin: 7.5rem auto 0;
+}
+
+.reviews-slider .slick-slide {
+  margin: 0 4.375rem;
+}
+
+.reviews-card {
+  width: 100%;
+  height: 100%;
+  background: #E0EBF3;
+  padding: 1.125rem 2.188rem;
+  border-radius: 1.25rem;
+  display: flex;
+  flex-direction: column;
+  color: #2F2940;
+  font-family: 'GolosText';
+}
+
+.reviews-card__head {
+  background: #fff;
+  margin: 0 auto 2.063rem;
+  width: 100%;
+  height: 6.063rem;
+  border-radius: 1.125rem;
+}
+
+.reviews-card__link {
+  display: flex;
+  align-items: center;
+  margin: auto 0 0;
+  color: #8F88B1;
+  font-weight: 500;
+  font-size: 1rem;
+  line-height: 1.5rem;
+}
+
+.reviews-card h4 {
+  line-height: 1.625rem;
+  font-size: 1.125rem;
+  font-weight: 500;
+}
+
+.reviews-card .box-text {
+  margin: 1.25rem 0 3.313rem;
+  line-height: 1.5rem;
+  font-size: 1rem;
+  font-weight: normal;
+}
+
+.to-from-results {
+  padding: 2rem 0;
+}
+
+.to-from-results-slider {
+  background: #E0EBF3;
+  border-radius: 1.5rem;
+  padding: 10rem 6.25rem 5rem;
+}
+
+.to-from-results-slider__wrapper {
+  width: 100%;
+  display: flex;
+  align-items: stretch;
+  
+}
+
+.to-from-results__item {
+  position: relative;
+  z-index: 1;
+  flex: 1 1 50%;
+  margin: 0 .75rem;
+  padding: 0 0 1.25rem;
+}
+
+.to-from-results__item span {
+  position: absolute;
+  bottom: 0;
+  left: 50%;
+  transform: translate(-50%, 0);
+  font-size: 1.5rem;
+  line-height: 1.625rem;
+  color: rgba(19, 38, 61, 0.7);
+  text-transform: uppercase;
+  font-family: "Geologica";
+  font-weight: 300;
+  background: #fff;
+  display: block;
+  padding: 0.25rem 1rem;
+  border-radius: 1.25rem;
+}
+
+.to-from-results__item-img {
+  width: 100%;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  height: 32.5rem;
+  overflow: hidden;
+  border-radius: 1.5rem;
+}
+
+.to-from-results__item-img img {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+}
+
+.faq {
+  padding: 2rem 0;
+}
+
+.faq h2 {
+  margin: 0 0 3.75rem;
+}
+

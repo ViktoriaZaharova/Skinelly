@@ -1,0 +1,762 @@
+@font-face {
+  font-family: Geologica;
+  font-display: swap;
+  src:
+    url("../fonts/Geologica-Thin.woff2") format("woff2"),
+    url("../fonts/Geologica-Thin.woff") format("woff");
+  font-weight: 100;
+  font-style: normal;
+}
+
+@font-face {
+  font-family: Geologica;
+  font-display: swap;
+  src:
+    url("../fonts/Geologica-Light.woff2") format("woff2"),
+    url("../fonts/Geologica-Light.woff") format("woff");
+  font-weight: 300;
+  font-style: normal;
+}
+
+@font-face {
+  font-family: Geologica;
+  font-display: swap;
+  src:
+    url("../fonts/Geologica-Regular.woff2") format("woff2"),
+    url("../fonts/Geologica-Regular.woff") format("woff");
+  font-weight: 400;
+  font-style: normal;
+}
+
+@font-face {
+  font-family: Mulish;
+  font-display: swap;
+  src:
+    url("../fonts/Mulish-Medium.woff2") format("woff2"),
+    url("../fonts/Mulish-Medium.woff") format("woff");
+  font-weight: 500;
+  font-style: normal;
+}
+
+@font-face {
+  font-family: Mulish;
+  font-display: swap;
+  src:
+    url("../fonts/Mulish-SemiBold.woff2") format("woff2"),
+    url("../fonts/Mulish-SemiBold.woff") format("woff");
+  font-weight: 600;
+  font-style: normal;
+}
+
+@font-face {
+  font-family: Geologica;
+  font-display: swap;
+  src:
+    url("../fonts/Geologica-Bold.woff2") format("woff2"),
+    url("../fonts/Geologica-Bold.woff") format("woff");
+  font-weight: 700;
+  font-style: normal;
+}
+
+@font-face {
+  font-family: GolosText;
+  font-display: swap;
+  src:
+    url("../fonts/GolosText-Regular.woff2") format("woff2"),
+    url("../fonts/GolosText-Regular.woff") format("woff");
+  font-weight: 400;
+  font-style: normal;
+}
+
+@font-face {
+  font-family: GolosText;
+  font-display: swap;
+  src:
+    url("../fonts/GolosText-Medium.woff2") format("woff2"),
+    url("../fonts/GolosText-Medium.woff") format("woff");
+  font-weight: 500;
+  font-style: normal;
+}
+
+* {
+  box-sizing: border-box;
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+}
+
+*:before,
+*:after {
+  box-sizing: border-box;
+}
+
+html,
+body,
+div,
+span,
+applet,
+object,
+iframe,
+h1,
+h2,
+h3,
+h4,
+h5,
+h6,
+p,
+blockquote,
+pre,
+a,
+abbr,
+acronym,
+address,
+big,
+cite,
+code,
+del,
+dfn,
+em,
+img,
+ins,
+kbd,
+q,
+s,
+samp,
+small,
+strike,
+strong,
+sub,
+sup,
+tt,
+var,
+b,
+u,
+i,
+center,
+dl,
+dt,
+dd,
+ol,
+ul,
+li,
+fieldset,
+form,
+label,
+legend,
+table,
+caption,
+tbody,
+tfoot,
+thead,
+tr,
+th,
+td,
+article,
+aside,
+canvas,
+details,
+embed,
+figure,
+figcaption,
+footer,
+header,
+hgroup,
+menu,
+nav,
+output,
+ruby,
+section,
+summary,
+time,
+mark,
+audio,
+video {
+  margin: 0;
+  padding: 0;
+  border: 0;
+  font-size: 100%;
+  font: inherit;
+  vertical-align: baseline;
+}
+
+/* HTML5 display-role reset for older browsers */
+article,
+aside,
+details,
+figcaption,
+figure,
+footer,
+header,
+hgroup,
+menu,
+nav,
+section {
+  display: block;
+}
+
+blockquote,
+q {
+  quotes: none;
+}
+
+blockquote:before,
+blockquote:after,
+q:before,
+q:after {
+  content: "";
+  content: none;
+}
+
+table {
+  border-collapse: collapse;
+  border-spacing: 0;
+}
+
+html {
+  height: 100%;
+  font-size: 0.8333333333vw;
+}
+
+body {
+  width: calc(100vw - (100vw - 100%));
+  height: 100%;
+  position: relative;
+  margin: 0;
+  padding: 0;
+  font-family: "Mulish";
+  font-weight: 600;
+  font-size: 1.125rem;
+  line-height: 1.1;
+  background: #FAFAFA;
+  color: #13263D;
+}
+
+img {
+  max-width: 100%;
+}
+
+.box {
+  position: relative;
+  overflow: hidden;
+  display: -webkit-box;
+  display: -webkit-flex;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+  -webkit-align-items: center;
+  -ms-flex-align: center;
+  align-items: center;
+  -webkit-box-pack: center;
+  -webkit-justify-content: center;
+  -ms-flex-pack: center;
+  justify-content: center;
+}
+
+.box img,
+.box svg,
+.box picture,
+.box video {
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  /*height: 100%;*/
+  -o-object-fit: cover;
+  object-fit: cover;
+}
+
+
+.text-center {
+  text-align: center;
+}
+
+a {
+  text-decoration: none;
+}
+
+a:hover,
+a:focus {
+  text-decoration: none;
+}
+
+input,
+textarea,
+select {
+  outline: none;
+  box-shadow: none;
+  -webkit-appearance: none;
+  -moz-appearance: none;
+  appearance: none;
+  padding: 0 15px;
+  box-sizing: border-box;
+  font-family: "Mulish";
+  border: none;
+  border-radius: 10px;
+  width: 100%;
+  height: 54px;
+  background: transparent;
+  color: #000;
+  font-size: 15px;
+  cursor: pointer;
+}
+
+input::-moz-placeholder,
+textarea::-moz-placeholder,
+select::-moz-placeholder {
+  color: #595959;
+}
+
+input::placeholder,
+textarea::placeholder,
+select::placeholder {
+  color: #595959;
+}
+
+input:hover,
+input:focus,
+textarea:hover,
+textarea:focus,
+select:hover,
+select:focus {
+  outline: none;
+  box-shadow: none;
+}
+
+input[type=radio],
+input[type=checkbox] {
+  width: auto;
+  height: auto;
+  -webkit-appearance: auto;
+  -moz-appearance: auto;
+  appearance: auto;
+  margin: 0 5px 0 0;
+  display: inline;
+}
+
+label {
+  display: block;
+  width: 100%;
+  margin: 0 0 13px;
+}
+
+label:last-child {
+  margin: 0;
+}
+
+textarea {
+  resize: none;
+  padding: 12px 17px;
+  height: 103px;
+}
+
+button,
+.btn {
+  outline: none;
+  transition: 0.3s ease;
+  cursor: pointer;
+  box-shadow: none;
+  font-family: "Mulish";
+  padding: 0;
+  margin: 0;
+  border: none;
+  border-radius: 0;
+}
+
+button:hover,
+button:focus,
+.btn:hover,
+.btn:focus {
+  outline: none;
+  box-shadow: none;
+}
+
+.btn {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  text-align: center;
+  padding: 1.25rem 5rem;
+  font-size: 2rem;
+  font-family: "Geologica";
+  font-weight: 400;
+  height: 5.66rem;
+  border-radius: 3.25rem;
+  transition: 0.3s ease;
+}
+
+.btn-blue {
+  color: #fff;
+  background: #75BACD;
+  fill: #fff;
+}
+
+.btn-blue:hover {
+  background: #2190AC;
+  fill: #fff;
+  color: #fff;
+}
+
+.btn-1 {
+  width: -moz-max-content;
+  width: max-content;
+  background-color: #2190AC;
+  border-radius: 1.6875rem;
+  height: 3.25rem;
+  padding: 0 2rem;
+  text-transform: uppercase;
+  color: #fff;
+  letter-spacing: 0.04em;
+  font-size: 1.125rem;
+  line-height: 0.88;
+  border: none;
+  transition: 0.3s ease;
+  font-family: "Mulish";
+  font-weight: 600;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.btn-1:hover {
+  background-color: #13263D;
+}
+
+.btn-1:active {
+  background-color: #2190AC;
+}
+
+/* .svg-icon {
+  display: inline-block;
+  width: 100%;
+  height: 100%;
+} */
+
+.text {
+  letter-spacing: 0.02em;
+}
+
+strong,
+b {
+  font-weight: bold;
+  display: inline-block;
+}
+
+ul,
+ol {
+  padding: 0 0 0 20px;
+}
+
+.my-ul {
+  list-style: none;
+  padding: 0;
+}
+
+.list-dots {
+  list-style-type: disc;
+}
+
+.p-120 {
+  padding: 120px 0;
+}
+
+.p-80 {
+  padding: 80px 0;
+}
+
+.container-fluid {
+  padding: 0 4rem;
+}
+
+.container {
+  max-width: 94.375rem;
+}
+
+.section {
+  padding: 7.5rem 0;
+}
+
+
+.title-page {
+  font-size: 3.875rem;
+  line-height: 0.96;
+  font-family: "Geologica";
+  font-weight: 400;
+}
+
+.name {
+  font-size: 2rem;
+  line-height: 1;
+  font-family: "Geologica";
+  font-weight: 400;
+}
+
+
+h1,
+.h1 {
+  width: 100%;
+  font-family: "Geologica";
+  font-weight: normal;
+  font-size: 3.875rem;
+  line-height: 4.3rem;
+  margin: 0 auto;
+}
+
+h2,
+.h2 {
+  width: 100%;
+  font-family: "Geologica";
+  font-weight: normal;
+  font-size: 3.875rem;
+  line-height: 4.4rem;
+  margin: 0;
+}
+
+h3,
+.h3 {
+  width: 100%;
+  font-family: "Mulish";
+  font-weight: 600;
+  font-size: 2rem;
+  line-height: 2.25rem;
+  margin: 0;
+}
+
+.title-page {
+  font-size: 3.875rem;
+  line-height: 0.96;
+  font-family: "Geologica";
+  font-weight: 400;
+}
+
+.color-gradient {
+  color: transparent;
+  -webkit-background-clip: text;
+  background-clip: text;
+  background-image: linear-gradient(89.86deg, #79add5 0.14%, #7f77a6 27.4%);
+}
+
+.slick-slider {
+  width: 100%;
+}
+
+.slick-slide {
+  outline: none;
+}
+
+.slick-dots {
+  padding: 0;
+  list-style: none;
+  width: 100%;
+  bottom: 0;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  margin: 7.5rem auto 0;
+}
+
+.slick-dots li {
+  cursor: pointer;
+  transition: .3s ease;
+  border-radius: 50%;
+  margin: 0 .625rem;
+  width: 0.688rem;
+  height: 0.688rem;
+  background: #919EAC;
+}
+
+.slick-dots li.slick-active {
+  background: #79ADD5;
+}
+
+.slick-dots li button {
+  display: none;
+}
+
+.slider-stretch .slick-track {
+  display: flex;
+  align-items: stretch;
+}
+
+.slider-stretch .slcik-slide {
+  height: auto;
+}
+
+.label-checkbox {
+  position: relative;
+  display: flex;
+  align-items: flex-start;
+  color: rgba(255, 255, 255, 0.5);
+  font-size: 14px;
+  margin: 15px 0 0;
+  line-height: 1.14;
+}
+
+.inp-check {
+  display: none;
+}
+
+.checkbox-custom {
+  margin: 0 12px 0 0;
+  position: relative;
+  border-radius: 6px;
+  background-color: #fff;
+  width: 16px;
+  height: 16px;
+  min-width: 16px;
+  cursor: pointer;
+}
+
+.inp-check:checked~.checkbox-custom {
+  background: #fff url("../img/check-black.svg") no-repeat center;
+  background-size: 8px;
+}
+
+.breadcrumbs {
+  margin: 12.2rem 0 0 0;
+  padding: 5rem 0;
+}
+
+.catalog-page section {
+  overflow: hidden;
+}
+
+.breadcrumbs__block {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  text-align: center;
+}
+
+.breadcrumb {
+  margin: 1.5rem 0 0 0;
+  gap: 0.625rem;
+  justify-content: center;
+}
+
+.breadcrumb-item {
+  padding-left: 0;
+  display: flex;
+  align-items: center;
+}
+
+.breadcrumb-item+.breadcrumb-item {
+  padding-left: 0;
+  display: flex;
+  align-items: center;
+}
+
+.breadcrumb-item+.breadcrumb-item:before {
+  display: none;
+}
+
+.breadcrumb-item::after {
+  padding-left: 0.625rem;
+  color: rgba(19, 38, 61, 0.7);
+  content: "/";
+}
+
+.breadcrumb-item:last-child::after {
+  display: none;
+}
+
+.breadcrumb-item a {
+  letter-spacing: 0.02em;
+  color: rgba(19, 38, 61, 0.7);
+  letter-spacing: 0.02em;
+  border-bottom: 0.0625rem solid;
+  font-family: "Mulish";
+  /* font-weight: 500; */
+}
+
+.breadcrumb-item.active {
+  color: rgba(19, 38, 61, 0.4);
+  border: none;
+}
+
+.breadcrumb-item.active::after {
+  display: none;
+}
+
+.catalog-one {
+  border-radius: 1.5rem;
+  background: #e0ebf3;
+  margin: 0 4rem 7.5rem 4rem;
+  position: relative;
+  z-index: 1;
+}
+
+.catalog-one__image {
+  height: 100%;
+  width: 100%;
+  -o-object-fit: cover;
+  object-fit: cover;
+}
+
+.accordion {
+  border: none;
+  border-radius: 0;
+  background: transparent;
+}
+
+.accordion-item {
+  border: none;
+  background: #E4EFF2;
+  margin: 0 0 1.875rem;
+  border-radius: 1.5rem;
+  overflow: hidden;
+}
+
+.accordion-item:first-child{
+border-radius: 1.5rem;
+}
+
+.accordion-item:last-child {
+  margin: 0;
+  border-radius: 1.5rem;
+}
+
+.accordion-button {
+  font-size: 4rem;
+  font-weight: 400;
+  font-family: "Geologica";
+  background: transparent;
+  padding: 1.625rem 3.75rem;
+  border: none;
+  color: #13263D;
+}
+
+.accordion-button:focus {
+  border: none;
+  box-shadow: none;
+  background: transparent;
+  color: #13263D;
+}
+
+.accordion-button::after {
+  width: 8.375rem;
+  height: 8.375rem;
+  background: #fff url('../img/plus.svg') no-repeat center;
+  background-size: 5.375rem;
+  border-radius: 50%;
+  margin: 0 0 0 auto;
+}
+
+.accordion-button:focus:after, .accordion-button:not(.collapsed)::after {
+  background: #fff url('../img/plus.svg') no-repeat center;
+  background-size: 5.375rem;
+}
+
+
+.accordion-item:first-of-type .accordion-button {
+  background: transparent;
+  border: none;
+  box-shadow: none;
+  color: #13263D;
+}
+
+
+
+.accordion-body {
+  padding: 1.625rem 3.75rem;
+  font-size: 2rem;
+}
