@@ -42,8 +42,9 @@
 	align-items: center;
 }
 .header-top__logo {
-      padding-left: 2.5rem;
+      /* padding-left: 2.5rem; */
     max-width: 14.875rem;
+    padding: 1.5rem 2rem 0 0;
 }
 .header-top__contacts {
   padding-right: 2.5rem;
